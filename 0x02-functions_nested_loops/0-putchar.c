@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - No entry point
+ * main - main block
+ *Description: print _putchar followed on a new line
+ * Return: Always 0
  *
- * Return: Always 0 (success)
  */
 int main(void)
 {

@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * times_table -prints tabels
+ * times_table - check description
+ * Description: this function prints 9 times stsrting with 0
  * Return: void
  */
 void times_tables(void)
@@ -28,6 +29,11 @@ void times_tables(void)
 			{
 				_putchar('0' + rep / 10);
 				_putchar('0' + rep % 10);
+			}
+			if (b < 9)
+			{
+				_putchar(',');
+				_putchar(' ');
 			}
 			b++;
 		}

@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * times_table - check description
- * Description: this function prints 9 times stsrting with 0
+ * Description: this function prints 9 times starting with 0
  * Return: void
  */
 void times_tables(void)

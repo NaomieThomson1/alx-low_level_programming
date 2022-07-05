@@ -11,7 +11,7 @@ void print_alphabet_x10(void)
 	char blade;
 	int a;
 
-	for (a = 0; a <= 0; a++)
+	for (a = 0; a < 0; a++)
 	{
 		_putchar(blade);
 	}

@@ -3,26 +3,32 @@
 
 /**
  * main - prints the numbers from 1 through 100 follwed by a newline
- * for multiples of 3 it prints fuzz andbuzz for multiples of 5
- * the function prints fuzzbuzz for multiples of both 3 and 5
- * Return; always 0 (success)
+ * for multiples of 3 it prints Fizz and Buzz for multiples of 5
+ * the function prints FizzBuzz for multiples of both 3 and 5
+ * Return: always 0 (success)
  */
 
 int main(void)
 {
-	int a = 1;
+	int a;
 
-	for (; a < 100 ; a++)
+	for (a = 1; a <= 100 ; a++)
 	{
-		if (a % 3 == 0 && a % 5 == 0)
-			printf("FIzzBuzz ");
-		else if (a % 3 == 0)
-			printf("Fizz ");
-		else if (a % 5 == 0)
-			printf("Buzz ");
+		if (a % 3 == 0 && a % 5 != 0)
+		{
+			printf(" Fizz");
+		}
+		else if (a % 5 == 0 && a % 3 != 0)
+		{
+			printf(" Buzz");
+		}
+		else if (a % 3 == 0 && a % 5 == 0)
+		{
+			printf(" FizzBuzz");
+		}
 		else
 			printf("%d ", a);
 	}
-	printf("Buzz\n");
+	printf("\n");
 	return (0);
 }
